@@ -1,0 +1,129 @@
+    @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--Karla);
+}
+
+:root {
+    --Karla: 'Karla', sans-serif;
+    --Cyan:hsl(179, 62%, 43%);
+    --Cyan-Opacity:hsla(179, 62%, 43%, 0.825);
+    --Bright: hsl(71, 73%, 54%);
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+}
+
+body {
+    font-size: 16px;
+    background: var(--Light-Gray);
+    display: grid;
+    min-height: 100vh;
+    place-items: center;
+    padding: 50px 0;
+}
+
+p {
+    font-weight: 400;
+}
+
+            /* container */
+
+.container {
+    border-radius: 5px;
+    width: 80%;
+    border-radius: 5px;
+    overflow: hidden;
+    max-width: 630px;
+    box-shadow: 0px -1px 40px -25px #22209f87;
+}
+
+.box {
+    padding: 30px 25px;
+}
+
+            /*Community*/
+
+.community {
+    background: #fff;
+}
+
+.community h3 {
+    color: var(--Cyan);
+}
+
+.community h4 {
+    margin: 20px 0;
+    color: var(--Bright);
+}
+
+.community p {
+    color: var(--Grayish-Blue);
+    line-height: 28px;
+}
+
+            /*Subscription*/
+
+.subscription {
+    color: #fff;
+    background: var(--Cyan);
+}
+
+.subscription .price {
+    display: flex;
+    align-items: center;
+    color: var(--Light-Gray);
+    font-weight: 400;
+    margin: 20px 0 10px 0;
+}
+
+.subscription p span {
+    font-size: 25px;
+    font-weight: 700;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.subscription input {
+    border: none;
+    width: 100%;
+    margin-top: 30px;
+    padding: 15px 0;
+    border-radius: 5px;
+    color: #fff;
+    background: var(--Bright);
+    font-weight: 700;
+}
+
+            /*About*/
+
+.about {
+    color: #fff;
+    background: var(--Cyan-Opacity);
+}
+
+.about p {
+    margin-top: 20px;
+    font-weight: 400;
+    color: var(--Light-Gray);
+    width: 80%;
+    line-height: 25px;
+}
+
+@media only screen and (min-width : 500px) {
+    .flex {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+    }
+
+    .subscription {
+        color: #fff;
+        background: var(--Cyan);
+        display: grid;
+        flex-wrap: wrap;
+        padding: 2rem;
+        align-content: center;
+    }
+}
